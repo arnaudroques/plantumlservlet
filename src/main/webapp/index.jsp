@@ -55,7 +55,7 @@
 </div>
 <div id="content">
     <%-- CONTENT --%>
-    <form method="post" accept-charset="UTF-8"  action="${contextroot}/form">
+    <form method="post" accept-charset="UTF-8"  action="${hostpath}/form">
         <p>
             <textarea id="text" name="text" cols="120" rows="10"><c:out value="${decoded}"/></textarea>
             <input type="submit" />
@@ -63,7 +63,7 @@
     </form>
     <hr/>
     <p>You can enter here a previously generated URL:</p>
-    <form method="post" action="${contextroot}/form">
+    <form method="post" action="${hostpath}/form">
         <p>
             <input name="url" type="text" size="150" value="${imgurl}" />
             <br/>
