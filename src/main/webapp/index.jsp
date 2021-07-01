@@ -51,11 +51,11 @@
     <c:if test="${cfg['SHOW_GITHUB_RIBBON'] eq 'on' }">
         <%@ include file="resource/githubribbon.html" %>
     </c:if>
-    <p>Create your <a href="http://plantuml.com">PlantUML</a> diagrams directly in your browser !</p>
+    <p>Create your <a href="https://plantuml.com">PlantUML</a> diagrams directly in your browser !</p>
 </div>
 <div id="content">
     <%-- CONTENT --%>
-    <form method="post" accept-charset="UTF-8"  action="${contextroot}/form">
+    <form method="post" accept-charset="UTF-8"  action="${hostpath}/form">
         <p>
             <textarea id="text" name="text" cols="120" rows="10"><c:out value="${decoded}"/></textarea>
             <input type="submit" />
@@ -63,7 +63,7 @@
     </form>
     <hr/>
     <p>You can enter here a previously generated URL:</p>
-    <form method="post" action="${contextroot}/form">
+    <form method="post" action="${hostpath}/form">
         <p>
             <input name="url" type="text" size="150" value="${imgurl}" />
             <br/>
